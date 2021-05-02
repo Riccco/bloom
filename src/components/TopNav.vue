@@ -1,13 +1,23 @@
 <template>
     <div class="nav-box">
-        <div class="logo">i'm logo</div>
+        <div @click="toggleMenu">Visible</div>
+        <router-link to="/" class="logo">i'm logo</router-link>
         <div class="menu">i'm menu</div>
     </div>
 </template>
 
-<script>
+<script lang="ts">
+import { inject, Ref } from 'vue'
 export default {
-    
+    setup(){
+        const asideVisible =  inject<Ref<boolean>>('xxx')
+        const toggleMenu = ()=>{
+            console.log('我运行了')
+            asideVisible.value = !asideVisible.value
+            console.log(typeof asideVisible)
+        }
+        return {toggleMenu}
+    }
 }
 </script>
 
