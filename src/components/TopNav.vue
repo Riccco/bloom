@@ -1,6 +1,6 @@
 <template>
     <div class="nav-box">
-        <div @click="toggleMenu">Visible</div>
+        <div class="visbile" @click="toggleMenu">Visible</div>
         <router-link to="/" class="logo">i'm logo</router-link>
         <div class="menu">i'm menu</div>
     </div>
@@ -22,6 +22,13 @@ export default {
 </script>
 
 <style lang="scss">
+@media (min-width:500px){
+    .visbile{display: none;}
+    
+}
+@media (max-width:500px) {
+    .menu{display: none;}
+}
     .nav-box{
         display: flex;
         justify-content: space-between;

@@ -33,6 +33,14 @@ export default {
 </script>
 
 <style lang="scss">
+@media (max-width:500px){
+  .doc-nav{
+    display: none;
+  }
+  .doc-content{
+     margin-left: 0px !important;
+  }
+}
 ._top-nav {
   position: sticky;
   top: 0;

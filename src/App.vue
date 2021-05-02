@@ -7,7 +7,8 @@ import { provide, ref } from 'vue'
 export default {
   name: 'App',
   setup(){
-    const asideVsbile = ref(false)
+    const width = document.documentElement.clientWidth
+    const asideVsbile = ref(width >= 500 ? true : false)
     provide('xxx',asideVsbile)
   }
 }
