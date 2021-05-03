@@ -6,7 +6,9 @@
         <div>
           <h3>标题1</h3>
           <ul>
-            <li>1</li>
+            <li>
+              <router-link to="/doc/switch">siwtch</router-link>
+            </li>
             <li>1</li>
             <li>1</li>
             <li>1</li>
@@ -15,7 +17,9 @@
         </div>
       </div>
 
-      <div class="doc-content">内容区域 1</div>
+      <div class="doc-content">
+        <router-view />
+      </div>
     </div>
   </div>
 </template>
@@ -34,9 +38,9 @@ export default {
 
 <style lang="scss">
 @media (max-width:500px){
-  .doc-nav{
-    display: none;
-  }
+  // .doc-nav{
+  //   display: none;
+  // }
   .doc-content{
      margin-left: 0px !important;
   }
