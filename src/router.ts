@@ -1,6 +1,7 @@
 import Home from './views/Home.vue'
 import Doc from './views/Doc.vue'
 import SwitchDemo from './components/SwitchDemo.vue'
+import ButtonDemo from './components/ButtonDemo.vue'
 import * as VueRouter  from 'vue-router'
 
 export const router = VueRouter.createRouter({
@@ -8,8 +9,10 @@ export const router = VueRouter.createRouter({
     routes:[
         {path:'/',component: Home},
         {path:'/doc',component : Doc, children:[
-            {path:'switch',component:SwitchDemo}
-        ]}
+            {path:'',component:SwitchDemo},
+            {path:'switch',component:SwitchDemo},
+            {path:'Button',component:ButtonDemo}
+        ]},
     ]
 })
 

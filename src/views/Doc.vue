@@ -9,7 +9,9 @@
             <li>
               <router-link to="/doc/switch">siwtch</router-link>
             </li>
-            <li>1</li>
+            <li>
+              <router-link to="/doc/button">Button</router-link>
+            </li>
             <li>1</li>
             <li>1</li>
             <li>1</li>
