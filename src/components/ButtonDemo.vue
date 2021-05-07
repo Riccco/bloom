@@ -1,8 +1,6 @@
 <template>
     <div>
-        <bloom-button>
-            按钮
-        </bloom-button>
+        <bloom-button>默认</bloom-button>
     </div>
 </template>
 
@@ -14,3 +12,7 @@ export default {
    } 
 }
 </script>
+
+<style lang="scss">
+    
+</style>
