@@ -24,7 +24,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 $h:25px;
 button.checked > span{
   left: calc(100% - #{$h} - 2px);

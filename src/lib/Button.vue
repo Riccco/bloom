@@ -1,20 +1,37 @@
 <template>
-    <button :class="'bloom-'+type">
-        <slot></slot>
+    <button :style="{'background':background}" :id="type" :class="`bloom-${theme}`">
+        <slot/>
     </button>
 </template>
 
 <script lang="ts">
 export default {
+    /*
+    * no type
+    * default
+    * info
+    * danger
+    * ban
+    * diy
+    * */
     props:{
-        type:{
+        theme:{
             type:String,
             default:"default"
         },
-        round:{
-            type:String
+        backgroundColor:{
+          type:String,
+          default: ""
         }
+    },
+  setup(props){
+    const type = 'default'
+    let background = ""
+    if(props.theme === "DIY" && props.backgroundColor !== ""){
+        background = props.backgroundColor
     }
+    return {type,background}
+  }
 }
 </script>
 
@@ -30,7 +47,31 @@ button{
     }
 }
 
-.bloom-default{
+#default{
+  padding: 10px 20px;
+  border-radius: 4px;
+  margin: 10px;
+  color: white;
+}
 
+.bloom-default{
+    color: black !important;
+    background-color: #ffffff;
+    border: 1px solid #dcdfe6;
+}
+
+.bloom-info{
+  background-color: #909399;
+}
+
+.bloom-danger{
+  background-color: #f56c6c;
+}
+
+.bloom-ban{
+  background-color:#4a4a4a;
+  &:hover{
+    cursor: default;
+  }
 }
 </style>
