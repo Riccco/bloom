@@ -12,7 +12,9 @@
             <li>
               <router-link to="/doc/button">Button</router-link>
             </li>
-            <li>1</li>
+            <li>
+              <router-link to="/doc/dialog">Dialog</router-link>
+            </li>
             <li>1</li>
             <li>1</li>
           </ul>
@@ -69,6 +71,5 @@ export default {
   height: 100vh;
   margin-left: 261px;
   flex: 1;
-  background-color: aquamarine;
 }
 </style>
