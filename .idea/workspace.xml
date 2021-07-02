@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c6d29547-a0f6-4db4-af6e-ed0574c5b650" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/DialogDemo.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/Dialog.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/router.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Doc.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Doc.vue" afterDir="false" />
-    </list>
+    <list default="true" id="c6d29547-a0f6-4db4-af6e-ed0574c5b650" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,6 +43,7 @@
       <workItem from="1620529453235" duration="9329000" />
       <workItem from="1620573097128" duration="2001000" />
       <workItem from="1620657452584" duration="596000" />
+      <workItem from="1624807813801" duration="51000" />
     </task>
     <servers />
   </component>
