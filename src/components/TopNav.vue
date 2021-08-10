@@ -1,37 +1,41 @@
 <template>
-    <div class="nav-box">
-        <div class="visbile" @click="toggleMenu">Visible</div>
-        <router-link to="/" class="logo">i'm logo</router-link>
-        <div class="menu">i'm menu</div>
-    </div>
+  <div class="nav-box">
+    <div class="visbile" @click="toggleMenu">Visib1le</div>
+    <img class="menu" src="../assets/logo.png"/>
+  </div>
 </template>
 
 <script lang="ts">
-import { inject, Ref } from 'vue'
+import {inject, Ref} from 'vue'
+
 export default {
-    setup(){
-        const asideVisible =  inject<Ref<boolean>>('xxx')
-        const toggleMenu = ()=>{
-            asideVisible.value = !asideVisible.value
-            console.log(typeof asideVisible)
-        }
-        return {toggleMenu}
+  setup() {
+    const asideVisible = inject<Ref<boolean>>('xxx')
+    const toggleMenu = () => {
+      asideVisible.value = !asideVisible.value
+      console.log(typeof asideVisible)
     }
+    return {toggleMenu}
+  }
 }
 </script>
 
 <style lang="scss">
-@media (min-width:500px){
-    .visbile{display: none;}
-    
+@media (min-width: 500px) {
+  .visbile {
+    display: none;
+  }
 }
-@media (max-width:500px) {
-    .menu{display: none;}
+
+.menu {
+  width: 16px;
+  height: 16px;
 }
-    .nav-box{
-        display: flex;
-        justify-content: space-between;
-        background-color: pink;
-        padding: 10px;
-    }
+
+.nav-box {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #eaecef;
+}
 </style>
