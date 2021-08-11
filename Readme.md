@@ -1,10 +1,10 @@
-# BLoom框架
-一个基于Vue3的个人框架 目前还在完善中
-开发过程欢迎关注我的博客：占位
+# Run
+`npm install`
+`yarn dev` 
 
-# 目前问题说明文档
-目标：完全和Vue一致，因为本人不是设计出身，只负责还原线稿，所以个人网站完全模仿VUE
+# Build Name
+Bloom
 
-Title部分：
-首页：无需适配
-文档：需要适配
+# Blog Url
+
+* https://www.yuque.com/xiongmao-vtmrd/gz705p/mu90dy

@@ -2,25 +2,8 @@
   <div>
     <top-nav class="_top-nav" />
     <div class="doc-box">
-      <div class="doc-nav" v-if="asideVisible">
-        <div>
-          <h3>标题1</h3>
-          <ul>
-            <li>
-              <router-link to="/doc/switch">siwtch</router-link>
-            </li>
-            <li>
-              <router-link to="/doc/button">Button</router-link>
-            </li>
-            <li>
-              <router-link to="/doc/dialog">Dialog</router-link>
-            </li>
-            <li>1</li>
-            <li>1</li>
-          </ul>
-        </div>
-      </div>
 
+      <drawer :asideVisible="asideVisible" />
       <div class="doc-content">
         <router-view />
       </div>
@@ -31,8 +14,10 @@
 <script lang="ts">
 import { inject, Ref } from 'vue'
 import TopNav from "../components/TopNav.vue";
+import Drawer from '../components/Drawer.vue'
+
 export default {
-  components: { TopNav },
+  components: { TopNav,Drawer },
   setup() {
     const asideVisible = inject<Ref<boolean>>("xxx");
     return {asideVisible}
@@ -46,7 +31,7 @@ export default {
   //   display: none;
   // }
   .doc-content{
-     margin-left: 0px !important;
+     margin-left: 0 !important;
   }
 }
 ._top-nav {
@@ -57,16 +42,7 @@ export default {
   max-height: 100vh;
   display: flex;
 }
-.doc-nav {
-  max-height: 100vh;
-  box-sizing: border-box;
-  width: 261px;
-  position: fixed;
-  overflow-x: auto;
-  padding-left: 20px;
-  padding-right: 10px;
-  background-color: burlywood;
-}
+
 .doc-content {
   height: 100vh;
   margin-left: 261px;

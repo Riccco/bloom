@@ -13,7 +13,6 @@ export default {
     const asideVisible = inject<Ref<boolean>>('xxx')
     const toggleMenu = () => {
       asideVisible.value = !asideVisible.value
-      console.log(typeof asideVisible)
     }
     return {toggleMenu}
   }

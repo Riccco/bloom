@@ -9,7 +9,7 @@ export default {
   name: 'App',
   setup(){
     const width = document.documentElement.clientWidth
-    const asideVsbile = ref(width >= 500 ? true : false)
+    const asideVsbile = ref(width >= 500)
     provide('xxx',asideVsbile)
     router.afterEach(()=> {
       if(width <= 500){

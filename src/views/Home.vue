@@ -26,7 +26,7 @@ export default {
 
 <style lang="scss">
 @function vw($px) {
-  @return ($px / 750) * 100vw;
+  @return $px / 750 * 100vw;
 }
   .main{
     padding-top: 32px;
