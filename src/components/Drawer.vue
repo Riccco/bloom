@@ -1,6 +1,7 @@
 <template>
-  <aside class="doc-nav" v-if="asideVisible">
-    <nav>
+  <div ref="getRef"></div>
+  <aside class="doc-nav" id="docNav"  ref="getRef">
+    <nav ref="getRef">
       <div>文档</div>
     </nav>
       <ul>
@@ -26,13 +27,26 @@
 </template>
 
 <script lang="ts">
+  import {ref, reactive, onMounted} from "vue";
+
   export default {
-    props:['asideVisible']
+    props:['asideVisible'],
+    setup(context) {
+      const getRef = ref(null)
+      onMounted(()=>{
+        const domWidth = document.getElementById('docNav')
+        console.log(domWidth.clientWidth)
+        console.log(getRef.value);
+        // console.log(getRef.value.clientWidth)
+      })
+      return {getRef};
+    },
   }
 </script>
 
 <style lang="scss">
 .doc-nav {
+  border: 1px solid red;
   height: 100vh;
   width: 261px;
   position: fixed;

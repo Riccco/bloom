@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c6d29547-a0f6-4db4-af6e-ed0574c5b650" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Drawer.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Drawer.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +29,8 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../seckill-goods-react" />
+    <property name="js.introduce.parameter.add.jsdoc" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="ts.external.directory.path" value="D:\tool\WebStorm 2020.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
@@ -49,7 +51,9 @@
       <workItem from="1624807813801" duration="51000" />
       <workItem from="1628558314009" duration="3284000" />
       <workItem from="1628570761003" duration="305000" />
-      <workItem from="1628660983692" duration="3778000" />
+      <workItem from="1628660983692" duration="3820000" />
+      <workItem from="1628759389176" duration="30000" />
+      <workItem from="1628834891743" duration="8985000" />
     </task>
     <servers />
   </component>
