@@ -1,6 +1,7 @@
 <template>
-  <div ref="getRef"></div>
-  <aside class="doc-nav" id="docNav"  ref="getRef">
+  <aside
+      :class="[asideVisible ? 'move-style-visible-on' : 'move-style-visible-off']"
+      class="doc-nav"  id="docNav" ref="getRef">
     <nav ref="getRef">
       <div>文档</div>
     </nav>
@@ -33,26 +34,37 @@
     props:['asideVisible'],
     setup(context) {
       const getRef = ref(null)
+      let width = ref(0)
       onMounted(()=>{
-        const domWidth = document.getElementById('docNav')
-        console.log(domWidth.clientWidth)
-        console.log(getRef.value);
-        // console.log(getRef.value.clientWidth)
+        width.value = getRef.value.clientWidth
+        console.log(getRef.value.clientWidth)
+        console.log(width.value)
       })
-      return {getRef};
+      return {getRef,width};
     },
   }
 </script>
 
 <style lang="scss">
+
+.move-style-visible-off{
+  left: -100%;
+  transform: translateX(100%);
+  transition: all 500ms;
+}
+
+.move-style-visible-on{
+  left: 0;
+  transform: translateX(0);
+  transition: all 500ms;
+}
+
 .doc-nav {
-  border: 1px solid red;
   height: 100vh;
-  width: 261px;
   position: fixed;
   overflow-x: auto;
   padding-left: 20px;
-  padding-right: 10px;
+  padding-right: 130px;
   background-color: #fff;
   z-index: 2;
   border-right: 1px solid #eaecef;
